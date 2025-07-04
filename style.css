@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+*{
+  font-family: "Cinzel", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 30px;
+}
+  
+.logo {
+    text-decoration: none;
+    color: bisque;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: bisque;
+
+}
+section {
+    padding: 35px 15px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+
+}
+.cities {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.city-data {
+    width: 500px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    padding: 50px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.city-image {
+    border: 4px solid #0f0303;         
+    border-radius: 10px;           
+    padding: 0px;                   
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0); 
+    width: 100%;                
+    display: block;                 
+    
+    height: 300px;
+    
+  }
+
+.cities a {
+    display: flex;
+    text-decoration: none;
+    color:black;
+    justify-content: center;
+    font-weight: 700;
+    margin-top: 20px;
+    font-size: 25px;
+
+}
+
+footer {
+  background-color: black;
+  text-align: right;
+  padding: 10px ;
+  font-size: 14px;
+  margin-top: 40px;
+  
+  
+}
+
+.png {
+    width: 40px;
+    height: auto;
+}
+
+.name {
+    font-size: 0.5 px;
+    color:bisque;
+    font-weight: 700;
+}
+.cities :hover {
+   transform: scale(1.02);
+   scroll-behavior: smooth;
+   transition: transform 0.3s ease 
+}
+.cities :active {
+    transform: scale(1.7) ;
+}
+.main-title {
+    font-size: 80px;
+    text-align: center;
+    margin-top: 80px;
+    font-weight: 500;
+
+}
+
+@media (max-width:1023px) {
+    header{
+        padding: 1px 15px;
+
+    }
+    .navigation {
+        padding: 1px;
+    }
+    .logo {
+        font-size: smaller;
+    }
+    .city-data {
+        width: 400px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .city-image{
+        height: 200px;
+    }
+    .city-1 {
+        margin-top: 60px;
+    }
+    .cities :active{
+        transform: scale(2); 
+    }
+    .main-title {
+        font-size: 40px;
+        margin-bottom: 1px;
+    }
+    .city-1 {
+        margin-top: 20px;
+    }
+}
+
+
+body {
+    background-image:url(images/hhfhs.jpeg) ;
+    background-repeat: repeat-y;
+    background-size: 1768px;
+
+}
